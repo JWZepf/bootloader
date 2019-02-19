@@ -7,7 +7,7 @@
  */
 .global _putc
 _putc:
-        ldr     x1, =0x70006000
+        ldr     x1, =0x3100000
 1:      ldrb    w2, [x1, #20]
         tbz     w2, #5, 1b
         strb    w0, [x1]
